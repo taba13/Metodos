@@ -1,0 +1,21 @@
+var personas = {
+  nombre:prompt("Ingrese el Nombre"),
+  edad:parseInt(prompt("Ingrese la edad ")),
+  cedula:parseInt(prompt("Ingrese la cedula ")),
+  mostrar:function(){
+  alert("1) "+"El nombre es : "+ this.nombre+"\n2) " +"la edad es :"+this.edad+"\n3) "+"la cedula es :"+ this.cedula)
+ },
+
+ mayor_edad:function(){
+
+  if(this.edad>=18){ 
+
+    Valor=true
+    alert("La persona es mayor de edad :"+this.nombre +Valor)
+    alert
+  }else{
+    Valor=false
+    alert("La persona no es mayor de edad :"+this.nombre +Valor)
+  }
+ }
+}

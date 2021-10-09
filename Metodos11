@@ -1,0 +1,19 @@
+var Libro={
+titulo_l:prompt("Ingrese el nombre de libro"),
+autor:prompt("Ingrese el nombre deL autor"),
+numeroejmpl:parseInt(prompt("Ingrese la cantidad de ejemplares")),
+librosp:{titulo_l,autor,numeroejmpl},
+primero :0,
+final : 0,
+prestamo:function(){
+prestamo:parseInt(prompt("Cuantos libros tomara en prestamo"))
+if(this.numeroejmpl<=prestamo){
+this.libros[this.final]=prompt("Ingrese el nombre del libro")
+this.final++;
+ return numeroejmpl-prestamo
+ return true
+}else{
+return false
+}
+}
+}

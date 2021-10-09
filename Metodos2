@@ -1,0 +1,36 @@
+var Cuenta = {
+  titular:prompt("Ingrese el Nombre del titular"),
+  cantidad:parseInt(prompt("Ingrese la cantidad que va depositar")),
+  mostrar:function(){
+  alert("1) "+"El nombre del titular es : "+ this.titular+"\n2) " +"la cantidad en la cuenta es :"+(this.cantidad2-this.retiro)
+  )
+ },
+cantidad2:0,
+ ingresar_cantidad:function(){
+ cantidad1=parseInt(prompt("Ingrese la cantidad que va depositar"));
+  if(cantidad1>0){
+
+    this.cantidad2=this.cantidad+cantidad1;
+    alert("tiene un total de:"+this.cantidad2);
+
+  }else{
+    alert("ingreso una cantidad negativa")
+    return cantidad1;
+  }
+  return this.cantidad2;
+
+ },
+ retiro:0,
+
+ retirar_cantidad:function(){
+  retirar1=parseInt(prompt("Ingrese la cantidad que va retirar"));
+  if(this.cantidad2>=retirar1){
+   this.retiro=this.cantidad2-retirar1;
+   alert("usted retiro "+retirar1 +"En la cuenta le queda "+this.retiro)
+  }else{
+   alert("No tiene suficiente dinero en la cuenta")
+  }
+  return this.retiro;
+ }
+
+}

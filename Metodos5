@@ -1,0 +1,47 @@
+var contraseña = {
+ longitud:0,
+ contraseña:prompt("Ingrese una contraseña"),
+  esFuerte:function(){
+    lon=this.contraseña.length
+    mayusculas:0
+    minusculas:0
+    numeros:0;
+    for(i=0;i<lon;i++){
+     if(this.contraseña.charAt(i)>="A"&&this.contraseña.charAt(i)<="Z"){
+         this.mayusculas++;
+     }
+     if(this.contraseña.charAt(i)>="A"&&this.contraseña.charAt(i)<="Z"){
+        this.minusculas++;
+     }
+     if(this.contraseña.charAt(i)>="0"&&this.contraseña.charAt(i)<="9"){
+       this.numeros++;
+     }
+   }
+   if(this.mayusculas>=2 && this.minusculas>=1 &&this.numeros>5){
+     x=true;
+     alert(x)
+   }
+
+ },
+
+ generar:function(){
+ longitud1:prompt("Ingrese una longitud"),
+ contraseña:"a"
+
+for(i=0;i<longitud1;i++){
+switch ((int) (Math.random() * 3)) {
+     case 0:
+       contraseña += (char) (Math.random() * 26 + 'A');
+       break;
+     case 1:
+       contraseña += (char) (Math.random() * 26 + 'a');
+       break;
+     case 2:
+       contraseña += (char) (Math.random() * 10 + '0');
+       break;
+     }
+}
+ return contraseña;
+ }
+
+}

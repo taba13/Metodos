@@ -1,0 +1,43 @@
+var Chimuela={
+energia:0,
+comer :function(comida){
+var conversion
+for(i=0; i <=comida; i++){
+
+conversion=i*4;
+this.energia=conversion;
+}
+return this.energia
+ },
+ volar:function(kilometros){
+  if(10<=kilometros){
+    return this.energia-kilometros
+  }else if(kilometros>10){
+        n=kilometros*2
+      return this.energia-n
+  }
+ },
+
+ estaDebil:function(){
+ if(this.energia<50){
+ alert("Chimuela esta debil")
+ }
+ },
+estaFeliz:function(){
+if(this.energia>=500 &&  this.energia<=1000){
+alert("chimuela esta feliz")
+}
+},
+cuantoQuierovolar:function(){
+
+vola=this.energia/5
+
+if(this.energia>=300 &&this.enegia<=400 ){
+ return this.vola+10
+}
+if(this.energia>=300 &&this.enegia<=400 && this.energia%20)
+    return this.vola+15
+}
+
+
+}

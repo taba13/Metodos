@@ -1,0 +1,36 @@
+//Crear un metodo constructor llamado formulas. Construye los siguiente metodos para la clase
+var formulas = {
+  sumar:function(num1,num2){
+  suma=num1+num2;
+  alert(suma);
+ },
+ fibonacci:function(cantidad){
+
+  var limit = cantidad;
+	var fibo = [0,1];
+
+	for(i=2; i <= limit; i++){
+		fibo.push(fibo[i-1] + fibo[i-2]);
+		document.write(fibo[i]+"<br/>");
+  }
+
+ },
+ operacion_modulo:function(cantidad,divisor){
+ modulo=cantidad%divisor;
+ alert(modulo)
+ },
+
+ operacion_primos:function(cantidad){
+ for(i=0;i<=cantidad;i++){
+
+    res=i%2;
+     if(res===0){
+
+        pares=res
+
+       document.write(i)
+     }
+ }
+}
+
+}

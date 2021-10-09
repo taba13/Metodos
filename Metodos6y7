@@ -1,0 +1,32 @@
+function Contador() {
+    this.reset = function () {
+        this.numero = 0;
+    }
+    this.inc = function () {
+        this.numero += 1;
+    }
+    this.dec = function () {
+        this.numero -= 1;
+    }
+    this.valorActual = function (valor) {
+        if(valor != null) {
+            this.numero = valor;
+        } else {
+            return this.numero;
+        }
+    }
+}
+
+
+function ejercicio6() {
+    let contador = new Contador();
+    contador.reset();
+    contador.valorActual(10);
+    contador.inc();
+    contador.inc();
+    contador.dec();
+    contador.inc();
+    console.log(contador.valorActual());
+}
+
+ejercicio6();

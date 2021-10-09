@@ -1,0 +1,44 @@
+var persona = {
+  bajo_peso:-1,
+  pesoideal:0,
+  Sobrepeso:1,
+  persona:prompt("Ingrese su nombre"),
+  edad:parseInt(prompt("Ingrese su edad")),
+  sexo:"H",
+  tipo_sexo1:prompt("Ingrese su sexo").charAt(0),
+  peso:parseFloat(prompt("Ingrese su peso")),
+  Altura:parseFloat(prompt("Ingrese su Altura")),
+  calcularIMC:function(){
+  imc= this.peso/Math.pow(this.Altura/100,2);
+  alert(imc)
+  if(imc<20){
+   return this.pesoideal;
+  }else if(imc>=20 && imc<=25){
+    return this.bajo_peso;
+   }else if(imc>25){
+    return this.Sobrepeso;
+   }
+
+   },
+   mayor_Edad:function(){
+   res=false;
+   if(this.edad>=18){
+     res=true
+     return res;
+     alert(res)
+     }else{
+     alert(res)
+     }
+   },
+   comprobar:function(){
+    tipo_sexo=this.tipo_sexo1
+
+     if(tipo_sexo=="M"||tipo_sexo=="m"){
+     return "M";
+     }else{
+      return "H";
+     }
+
+   }
+
+ }

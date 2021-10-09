@@ -1,0 +1,19 @@
+var Calculadora={
+
+cargar:function(numero){
+this.carga = numero
+},
+sumar:function(numero){
+ this.suma=this.carga+numero
+},
+multiplicar:function(numero){
+this.mul=this.suma*numero
+},
+valorActual:function(Valor){
+},
+resta:function(numero){
+
+this.resta=this.mul-numero
+this.resta=this.suma-numero
+}
+}
